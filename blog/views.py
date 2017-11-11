@@ -30,6 +30,10 @@ def edit(request,blogid):
     else:
         return render(request,'blogedit.html',{"blog":blog})
 
+
+
+
+
 def delete(request,blogid):
     blog = Blog.objects.get(id=blogid)
     blog.delete()
