@@ -1,0 +1,15 @@
+<ol>
+{%for blog in blogs%}
+<li>
+<div style="color:grey"><strong>{{blog.title}}<br/></strong><
+<i>{{blog.content}}<br/> </i>
+<div style="color:red">{{blog.abstract}}</div>
+<br />
+<a href="/edit/{{blog.id}}/"> Edit</a>
+<a href="/delete/{{blog.id}}/"> Delete</a>
+<br />
+<br/>
+
+</li>
+{%endfor%}
+</ol>

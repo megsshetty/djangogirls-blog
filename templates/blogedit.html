@@ -1,0 +1,7 @@
+<form method="POST">
+  {%csrf_token%}
+  <input type="text" name="title" value="{{blog.title}}">
+  <input type="text" name="content" placeholder="content" value="{{blog.content}}">
+  <input type="text" name="abstract"placeholder="abstract" value="{{blog.abstract}}">
+  <button type="submit">create blog</button>
+</form>
